@@ -1,0 +1,27 @@
+.cart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: #261d12;
+}
+
+.contadorCarrito{
+    position: relative;
+    right: -30px;
+    top: 15px;
+    
+}
+
+.carrito{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 25%;
+}
+
+.carrito :hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: #5b3013
+}

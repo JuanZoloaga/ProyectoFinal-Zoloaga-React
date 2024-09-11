@@ -1,0 +1,9 @@
+.greetings{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: white;
+}

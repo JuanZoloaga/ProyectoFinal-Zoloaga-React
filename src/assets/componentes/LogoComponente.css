@@ -1,0 +1,10 @@
+.logo{
+    width: 60%;
+}
+
+.logo :hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: #5b3013
+}
+

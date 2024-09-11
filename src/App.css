@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;  /*100-900*/
+  font-style: normal; /*italic*/
+  box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 140px;
+  background-color: rgb(252, 246, 232);
+  padding: 0;
+  margin: 0;
+}
+
+.logotipo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
+}
+
+.navbarTitulos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #A67D03;
+  width: 50%;
+}
+
+.navbarTitulos :hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  color: #5b3013
+}
+
+.navbarTitulos a{
+  color: #A67D03;
+  text-decoration: none;
+  
+}
+
+.textoslogan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
