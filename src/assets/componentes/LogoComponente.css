@@ -1,5 +1,5 @@
 .logo{
-    width: 60%;
+    width: 100%;
 }
 
 .logo :hover{
@@ -7,4 +7,5 @@
     transform: translateY(-2px);
     color: #5b3013
 }
+
 
