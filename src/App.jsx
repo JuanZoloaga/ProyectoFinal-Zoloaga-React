@@ -1,36 +1,32 @@
 /* eslint-disable no-undef */
 import './App.css'
-import NavBarComponente from './assets/componentes/NavBarComponente'
+import NavBar from './assets/componentes/NavBar'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import ItemListContainer from './assets/componentes/ItemListContainer';
 import ItemDetailContainer from './assets/componentes/ItemDetailContainer';
-import { useState } from 'react';
+import Checkout from './assets/componentes/Checkout'
+import { CartProvider } from './assets/componentes/context/CartContext';
 
 
 function App() {
 
-  const [categoria, setCategoria] = useState("");
-
-  const enviarCategoria= (categoria) =>{
-    setCategoria(categoria)
-  }
-
-
-
   return (
     <>
+          
+    <CartProvider>
     <BrowserRouter>
       <header>
-      <NavBarComponente enviarCategoria={enviarCategoria}/>
+      <NavBar/>
       </header>
     <Routes>
-      <Route exact path='/' element={<ItemListContainer categoria={categoria}/>}></Route>
-      <Route exact path='/category/:id' element={<ItemListContainer categoria={categoria} ></ItemListContainer>}></Route>
+      <Route exact path='/' element={<ItemListContainer/>}></Route>
+      <Route exact path='/category/:categoria' element={<ItemListContainer/>}></Route>
       <Route exact path='/item/:id' element={<ItemDetailContainer/>}></Route>
+      <Route exact path='/cart' element={<Checkout/>}></Route>
     </Routes>
     </BrowserRouter>
+    </CartProvider>
     </>
-
     
   )
 }
